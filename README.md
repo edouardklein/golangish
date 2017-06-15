@@ -22,7 +22,7 @@ Or clone the repo:
 
 ### Documentation
 
-Read the documentation FIXME(doc url) to understand how to use golangish.
+Read the documentation http://golangish.readthedocs.io/en/latest/ to understand how to use golangish.
 
 ### In the cloned repo
 

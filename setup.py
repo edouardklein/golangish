@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 from codecs import open
 from os import path
 
-__version__ = '0.0.1'
+__version__ = '0.0.2'
 
 here = path.abspath(path.dirname(__file__))
 
@@ -11,21 +11,26 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 
-install_requires = ['sphinx', 'doctest', 'flake8']  # FIXME: Explicit requirements here
-dependency_links = []  # FIXME: For packages not in pypi http://python-packaging.readthedocs.io/en/latest/dependencies.html#packages-not-on-pypi
+install_requires = ['sphinx', 'doctest', 'flake8'] 
+dependency_links = []
 
 setup(
-    name='FIXME',
+    name='golangish',
     version=__version__,
-    description='FIXME',
+    description="Port Golang's CSP semantics to Python",
     long_description=long_description,
-    url='FIXME',
-    download_url='https://github.com/edouardklein/FIXME/tarball/' + __version__,
-    license='FIXME',
+    url='https://github.com/edouardklein/golangish',
+    download_url='https://github.com/edouardklein/golangish/tarball/' + __version__,
+    license='AGPLv3',
     classifiers=[
-        'FIXME'
+        'Development Status :: 3 - Alpha',
+        'Framework :: AsyncIO',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)',
+        'Operating System :: POSIX',
+        'Programming Language :: Python :: 3.6',
     ],
-    keywords='FIXME',
+    keywords='CSP, Golang, Channel, Coroutine, Select',
     packages=find_packages(exclude=['docs', 'tests*']),
     include_package_data=True,
     author='Edouard Klein',

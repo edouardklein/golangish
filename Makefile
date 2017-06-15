@@ -4,11 +4,7 @@ doc:
 	make -C docs html
 
 test:
-	coverage run -m doctest FIXME(module_name/__init__.py)
-	# FIXME(Add the following to __init__.py)
-	# if __name__ == '__main__':
-  #  import doctest
-  #  doctest.testmod()
+	coverage run -m doctest golangish/__init__.py
 
 lint:
 	flake8 $$(find . -type f -name '*.py')

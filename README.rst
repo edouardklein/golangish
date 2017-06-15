@@ -1,10 +1,13 @@
-# Golangish
+==========
+Golangish
+==========
 
-## Overview
-
+Overview
+---------
 Port golang's CSP semantics to Python, namely the behavior of the `go`, `<-` `->` and `select` constructs.
 
-## Installation
+Installation
+===============
 
 To install use pip:
 
@@ -18,15 +21,19 @@ Or clone the repo:
     
     
 
-## Usage
+Usage
+==========
 
-### Documentation
+Documentation
++++++++++++++++++
 
 Read the documentation http://golangish.readthedocs.io/en/latest/ to understand how to use golangish.
 
-### In the cloned repo
+In the cloned repo
+++++++++++++++++++++
 
-#### Helper targets
+Helper targets
+>>>>>>>>>>>>>>>>>>
 
 To build the documentation, run:
 
